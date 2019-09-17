@@ -74,6 +74,12 @@ namespace TweetBook
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            app.Run(context =>
+            {
+                context.Response.Redirect("/swagger");   //This load the swagger UI on start.
+                return Task.CompletedTask;
+            });
         }
     }
 }
