@@ -23,6 +23,8 @@ namespace TweetBook.Services
                 });
             }
         }
+
+
         public Post GetPostById(Guid postId)
         {
             return _posts.SingleOrDefault(x => x.Id == postId);
@@ -42,6 +44,16 @@ namespace TweetBook.Services
 
             var index = _posts.FindIndex(x => x.Id == postToUpdate.Id);
             _posts[index] = postToUpdate;
+            return true;
+        }
+
+        public bool DeletePost(Guid postID)
+        {
+            var post = GetPostById(postID);
+            if (post == null)
+                return false;
+
+            _posts.Remove(post);
             return true;
         }
     }
