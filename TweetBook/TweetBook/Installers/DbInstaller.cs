@@ -22,7 +22,9 @@ namespace TweetBook.Installers
                 .AddEntityFrameworkStores<DataContext>();
 
             //Change to Scope, for the lifetime of the request to use this service.
-            services.AddScoped<IPostService, PostService>();
+           // services.AddScoped<IPostService, PostService>();
+
+            services.AddScoped<IPostService, CosmosPostService >();
         }
     }
 }
