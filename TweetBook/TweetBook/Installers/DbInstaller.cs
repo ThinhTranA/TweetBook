@@ -21,7 +21,8 @@ namespace TweetBook.Installers
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<DataContext>();
 
-            services.AddSingleton<IPostService, PostService>();
+            //Change to Scope, for the lifetime of the request to use this service.
+            services.AddScoped<IPostService, PostService>();
         }
     }
 }
