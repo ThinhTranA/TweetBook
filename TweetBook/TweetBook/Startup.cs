@@ -15,6 +15,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SwaggerOptions = TweetBook.Options.SwaggerOptions;
 using TweetBook.Installers;
+using TweetBook.Options;
 
 namespace TweetBook
 {
