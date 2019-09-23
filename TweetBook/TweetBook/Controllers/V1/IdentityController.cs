@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -22,6 +23,14 @@ namespace TweetBook.Controllers.V1
         [HttpPost(ApiRoutes.Identity.Register)]
         public async Task<IActionResult> Login([FromBody] UserLoginRequest request)
         {
+            if (!ModelState.IsValid)   //Configure useing the eg:[EmailAddress] attribute in the request.
+            {
+               return  BadRequest(new AuthFailedResponse
+               {
+                   Errors = ModelState.Values.SelectMany(x => x.Errors.Select(xx => xx.ErrorMessage))
+               });
+            }
+
             var authResponse = await _identityService.RegisterAsync(request.Email, request.Password);
 
             if (!authResponse.Success)
