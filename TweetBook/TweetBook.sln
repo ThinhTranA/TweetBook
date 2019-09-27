@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetBook", "TweetBook\TweetBook.csproj", "{87716EE5-5A6F-4C49-B53B-B1297FE500D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TweetBook", "TweetBook\TweetBook.csproj", "{87716EE5-5A6F-4C49-B53B-B1297FE500D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tweebook.IntegrationTests", "Tweebook.IntegrationTests\Tweebook.IntegrationTests.csproj", "{C7D47AA4-B909-4E12-9B2E-07CDC1B4E10E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{87716EE5-5A6F-4C49-B53B-B1297FE500D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87716EE5-5A6F-4C49-B53B-B1297FE500D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87716EE5-5A6F-4C49-B53B-B1297FE500D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7D47AA4-B909-4E12-9B2E-07CDC1B4E10E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7D47AA4-B909-4E12-9B2E-07CDC1B4E10E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7D47AA4-B909-4E12-9B2E-07CDC1B4E10E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7D47AA4-B909-4E12-9B2E-07CDC1B4E10E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
