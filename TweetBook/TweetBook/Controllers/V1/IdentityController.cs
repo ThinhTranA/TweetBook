@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 using TweetBook.Contracts.V1;
 using TweetBook.Contracts.V1.Requests;
 using TweetBook.Contracts.V1.Responses;

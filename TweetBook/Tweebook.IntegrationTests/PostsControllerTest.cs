@@ -1,11 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using FluentAssertions;
+using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using FluentAssertions;
-using Tweetbook.Contracts.V1;
-using Tweetbook.Contracts.V1.Requests;
-using Tweetbook.Domain;
+using TweetBook.Contracts.V1;
+using TweetBook.Contracts.V1.Requests;
+using TweetBook.Domain;
 using Xunit;
 
 namespace Tweetbook.IntegrationTests
